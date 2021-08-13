@@ -11,8 +11,10 @@ import android.widget.Toast;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.parse.LogInCallback;
+import com.parse.Parse;
 import com.parse.ParseException;
 import com.parse.ParseUser;
+import com.parse.SignUpCallback;
 
 public class LoginActivity extends AppCompatActivity {
 
@@ -30,9 +32,13 @@ public class LoginActivity extends AppCompatActivity {
             goMainActivity();
         }
 
+        //Signup process
+        setContentView(R.layout.activity_login);
+
         etUsername = findViewById(R.id.etUsername);
         etPassword = findViewById(R.id.etPassword);
         btnLogin = findViewById(R.id.btnLogin);
+
 
         btnLogin.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -44,6 +50,7 @@ public class LoginActivity extends AppCompatActivity {
             }
         });
     }
+
 
     private void loginUser(String username, String password) {
         Log.i(TAG, "Attempting to login user" + username);
