@@ -33,7 +33,9 @@ Here's a walkthrough of implemented user stories:
 
 ## Notes
 
-Describe any challenges encountered while building the app.
+Challenges encountered:
+1. Implementing signout feature.
+2. Understanding core concept on style bottom navigation view.
 
 ## Open-source libraries used
 
@@ -42,7 +44,7 @@ Describe any challenges encountered while building the app.
 
 ## License
 
-    Copyright [yyyy] [name of copyright owner]
+    Copyright [2021] [Nitish Kafle]
 
     Licensed under the Apache License, Version 2.0 (the "License");
     you may not use this file except in compliance with the License.
