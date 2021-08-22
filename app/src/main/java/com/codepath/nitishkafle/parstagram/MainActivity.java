@@ -24,6 +24,7 @@ import android.widget.Toast;
 
 import com.codepath.nitishkafle.parstagram.fragments.ComposeFragment;
 import com.codepath.nitishkafle.parstagram.fragments.PostsFragment;
+import com.codepath.nitishkafle.parstagram.fragments.ProfileFragment;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.parse.FindCallback;
 import com.parse.ParseException;
@@ -59,8 +60,7 @@ public class MainActivity extends AppCompatActivity {
                 Fragment fragment;
                 switch (menuItem.getItemId()) {
                     case R.id.action_home:
-                        // update fragment
-                        Toast.makeText(MainActivity.this, "Action Home Pressed", Toast.LENGTH_SHORT).show();
+                        //Toast.makeText(MainActivity.this, "Action Home Pressed", Toast.LENGTH_SHORT).show();
                         fragment = new PostsFragment();
                         break;
                     case R.id.action_compose:
@@ -68,8 +68,7 @@ public class MainActivity extends AppCompatActivity {
                         break;
                     case R.id.action_profile:
                     default:
-                        // update fragment
-                        fragment = new ComposeFragment();
+                        fragment = new ProfileFragment();
                         break;
                 }
                 fragmentManager.beginTransaction().replace(R.id.flContainer, fragment).commit();
